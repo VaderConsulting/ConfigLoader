@@ -1,12 +1,25 @@
 # ConfigLoader
 
-WindowsApplication1
+WindowsApplication1 This is a historical working copy from Dave Robinson / VaderConsulting, published so the project can be found and understood from GitHub.
 
-**Target:** v3.5
-## Contents
+**Source last updated:** 2008-09-02  
+**Language:** VB.NET  
+**Target:** v3.5  
+**Output:** WinExe
 
-- `ConfigLoader.sln`
-- `ConfigLoader/ConfigLoader.vbproj`
+## What it is
+
+WindowsApplication1 This is a historical working copy from Dave Robinson / VaderConsulting, published so the project can be found and understood from GitHub.
+
+## Solution structure
+
+| Project | Language | Path |
+|---------|----------|------|
+| `ConfigLoader` | VB.NET | `ConfigLoader/ConfigLoader.vbproj` |
+
+## How to open
+
+Open `ConfigLoader.sln` in Visual Studio.
 
 ## Attribution and provenance
 
