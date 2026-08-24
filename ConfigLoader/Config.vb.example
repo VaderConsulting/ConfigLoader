@@ -1,0 +1,40 @@
+﻿Imports System
+Imports System.Xml
+Imports System.Xml.XPath
+
+Public Class Config
+
+    Private m_Document As XmlDocument
+    Private m_Filename As String = ""
+    Private m_Config As Configuration
+
+    Public Structure Configuration
+        Dim Company As String
+        Dim Solution As String
+        Dim Project As String
+        Dim Version As String
+        Dim Section As String
+        Dim User As String
+        Dim DefaultValue As String
+        Dim Setting As String
+    End Structure
+
+    Public Sub New(ByVal Filename As String)
+        m_Filename = Filename
+    End Sub
+
+    Public Function GetSettingValue(ByVal Config As Configuration) As String
+        Dim ReturnValue As String = Config.DefaultValue
+        Dim Doc As XmlDocument = New XmlDocument
+        Dim Nodes
+
+        Doc.Load(m_Filename)
+
+        Nodes = Doc.SelectSingleNode("descendant::Configuration[@Name='Company Name'/Solution@Name='Solution Name'/Project@Name='Project Name'/Version@Value='1'/Section@Name='A Section Name'/UserName="REDACTED"/Setting@Name='Setting Name']")
+
+        Console.WriteLine(Nodes.Item(0).Value)
+
+        Return ReturnValue
+    End Function
+
+End Class
