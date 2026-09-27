@@ -1,6 +1,6 @@
 # ConfigLoader
 
-WindowsApplication1 This is a historical working copy from Dave Robinson / VaderConsulting, published so the project can be found and understood from GitHub.
+WindowsApplication1 Working copy from my Historical Dev folder.
 
 **Source last updated:** 2008-09-02  
 **Language:** VB.NET  
@@ -9,7 +9,7 @@ WindowsApplication1 This is a historical working copy from Dave Robinson / Vader
 
 ## What it is
 
-WindowsApplication1 This is a historical working copy from Dave Robinson / VaderConsulting, published so the project can be found and understood from GitHub.
+WindowsApplication1 Working copy from my Historical Dev folder.
 
 ## Solution structure
 
